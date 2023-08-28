@@ -14,8 +14,19 @@
  */
 
 function whatToDoForLunch(hungry, availableTime) {
-  console.log("I don't know what to do!");
+  if (!hungry) {
+    console.log("I will go eat!");
+  } else {
+    if (availableTime < 20) {
+      console.log("Pick up a snack or grab something you have ready at home.");
+    } else if (availableTime >= 20 && availableTime <= 30) {
+      console.log("I deserve a break and should take time to cook a tasty meal.");
+    } else {
+      console.log("Consider how much time you actually have to spare.");
+    }
+  }
 }
+
 
 
 /*
